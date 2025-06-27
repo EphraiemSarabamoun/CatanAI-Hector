@@ -1,11 +1,8 @@
-
-class resources:
-    WOOD = "wood"
-    BRICK = "brick"
-    SHEEP = "sheep"
-    WHEAT = "wheat"
-    ORE = "ore"
-
-    @staticmethod
-    def all_resources():
-        return [resources.WOOD, resources.BRICK, resources.SHEEP, resources.WHEAT, resources.ORE]
+class Resources(IntEnum): 
+    BRICK  = 0
+    WOOD = 1
+    SHEEP   = 2
+    WHEAT = 3
+    ORE  = 4
+    DESERT = 5
+    

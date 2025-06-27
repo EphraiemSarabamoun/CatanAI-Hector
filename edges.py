@@ -1,4 +1,5 @@
-class Edges:
-    def __init__(self, edges):
+class Edge:
+    def __init__(self):
         self.resources = []
         self.connections = []
+        self.settlement = None

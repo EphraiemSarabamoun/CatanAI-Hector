@@ -1,8 +1,10 @@
-class Resources(IntEnum): 
-    BRICK  = 0
-    WOOD = 1
-    SHEEP   = 2
-    WHEAT = 3
-    ORE  = 4
-    DESERT = 5
+from enum import Enum, auto
+
+class Resource(Enum):
+    BRICK = auto()
+    WOOD = auto()
+    SHEEP = auto()
+    WHEAT = auto()
+    ORE = auto()
+    NONE = auto()
     

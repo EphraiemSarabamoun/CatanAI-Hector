@@ -41,9 +41,7 @@ class Board:
             # Assign the hex's resource
             current_edge.resources.append(first_hex.resource)
 
-            # Connect to adjacent edges in the cycle
-            # The previous edge is at index (i - 1)
-            # The next edge is at index (i + 1) % 6
+
             prev_edge = hex_edges[i - 1]
             next_edge = hex_edges[(i + 1) % 6]
             
@@ -55,7 +53,4 @@ class Board:
         self.edges.extend(hex_edges)
             
         self.hexes.append(first_hex)
-
-
-
 
